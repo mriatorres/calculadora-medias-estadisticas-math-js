@@ -7,6 +7,7 @@
     <title>CalCuLar || Calculadora medias estadísticas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="https://fontawesome.com/icons/square-root-variable?f=classic&s=solid">
 </head>
 <body>
         <header>
@@ -85,7 +86,7 @@
                  </div>
                  <div class="containerCalc">
                     <textarea type="text" id="aritmetica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
-                    <button>Calcular</button>
+                    <button id="btnAritmetica">Calcular</button>
             </div>
 
             </div> <br><br><br><br><br><br>
@@ -101,9 +102,10 @@
                     <h2>Calculadora Media ponderada</h2>
                 </div>
                 <div class="texto">
-                    <p>La media aritmética es un promedio estándar que a menudo se denomina <i>promedio</i>. <br> 
-                    La media aritmética es el promedio de un conjunto de valores, o su distribución. <br>
-                   Se obtiene con la suma de un conjunto de valores dividida entre el número total de sumandos <br> <br>
+                    <p>La media ponderada es una medida de tendencia central en la cual, a cada valor. <br> 
+                    x¡ que puede tomar una variable X, se le asigna un <i>peso</i> p¡. <br>
+                    es la división entre el sumatorio de todos los valores X multiplicados <br>
+                    por su peso entre la suma de todos los peso. <br><br>
                    La fórmula de la media ponderada es la siguiente:
                 </p>
                 </div>
@@ -114,16 +116,19 @@
 
                     <div class="instrucciones">
                         <h3>Cómo calcular la media ponderada</h3>
-                     <p><b>1.</b> Sumar todos los datos estadísticos de la muestra. <br>
-                        <b>2.</b> Dividir la suma anterior entre el número total de datos. <br>
-                        <b>3</b>  El resultado obtenido es la media aritmética de la muestra estadística. <br> <br>
+                     <p><b>1.</b> Multiplicar los datos por sus pesos correspondientes.<br>
+                        <b>2.</b> Sumar los resultados de la multiplicacion.<br>
+                        <b>3</b> dividir el resultado de la suma por la suma de los pesos.<br>
+                        <b>4</b> El resultado obtenido es la media ponderada de la muestra estadistica.<br><br>
+
                         Introduzca los datos de cualquier muestra estadística en la siguiente calculadora para <br> 
-                        calcular su media aritmética. Los datos deben separase por un espacio e introducirse  <br>
-                        usando el punto como separador decimal. </p>
+                        calcular su media ponderada. Ingrese en el primer contenedor los datos y en el segundo el <br> 
+                        peso de los datos. Los datos deben separase por un espacio e introducirse usando el punto <br> 
+                        como separador decimal.</p> 
                  </div>
                  <div class="containerCalc">
                     <textarea type="text" id="aritmetica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
-                    <button>Calcular</button>
+                    <button id="btnPonderada">Calcular</button>
              </div>
             </div> <br><br><br><br><br><br>
 
@@ -303,6 +308,15 @@
                 <li><i class="fa-solid fa-envelope"></i> CONTACTO</li>
            </ul>
         </footer>
+        <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e){
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
     <script src="./mediasfunciones.js"></script>
     <script src="./main.js"></script>
 </body>
