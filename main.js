@@ -1,14 +1,6 @@
 //scroll entre secciones
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e){
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
-
+//Datos usuario
 function ingreso () {
     const valor = prompt('Ingrese numeros separados por coma');
     const separado = valor.split(',');
@@ -19,6 +11,16 @@ function ingreso () {
         numeros.push(Number(element));
     })
         return numeros;
+}
+
+//Botones calcular
+const btnAritmetica = document.getElementById('btnAritmetica');
+btnAritmetica.addEventListener('click', calcularAritmetica());
+
+
+function calcularAritmetica (){
+    console.log('boton aritmetica oprimido');
+
 }
 
 // function ingreso (valor) {
