@@ -23,6 +23,9 @@ function calcularAritmetica (){
 
 }
 
+const btnPonderada = document.getElementById('btnPonderada');
+const btnCuadratica = document.getElementById('btnCuadratica');
+
 // function ingreso (valor) {
 // valor = document.getElementById('inputUser').values;
 // const myArray = valor.split(",");
