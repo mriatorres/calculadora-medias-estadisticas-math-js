@@ -160,8 +160,71 @@ header .shop{
     display: inline-block;
     border-radius: 50%;
 }*/
- /*Calculadora aritmetica*/
  .calculadoraAri .titulo h2{
+    color:#5B5280;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+ }
+
+ .calculadoraAri .texto p{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 25px;
+    top: 65px;
+ }
+
+ .calculadoraAri .imagen img{
+    position: absolute;
+    top: 220px;
+    left: 25px;
+    box-shadow: 0 10px 10px #ffd148;
+    border-radius: 10px;
+ }
+
+ .calculadoraAri .instrucciones h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: #5B5280;
+    position: absolute;
+    left: 25px;
+    top: 285px;
+ }
+
+ .calculadoraAri .instrucciones p{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 25px;
+    top: 330px;
+ }
+
+ .calculadoraAri .instrucciones b, i{
+    color: #5B5280;
+ }
+
+.calculadoraAri{
+    position: relative;
+    top:30%;
+    background-color: #FFEECE55;
+    backdrop-filter: blur(20px);
+    width: calc(92%);
+    height: 800px;
+    left:4%;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-rows: 300px;
+    padding:50px 0;
+    box-shadow: 0 20px 20px #0000004A;
+}
+
+
+.calculadoraAri .titulo h2{
     color:#5B5280;
     font-weight: bolder;
     font-size: 25px;
@@ -223,6 +286,92 @@ header .shop{
     padding:50px 0;
     box-shadow: 0 20px 20px #0000004A;
 }
+
+/* Container  ponderada */
+
+.calculadoraPonderada .titulo h2{
+    color:#5B5280;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+ }
+
+ #texto{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 25px;
+    top: 65px;
+ }
+
+ .calculadoraPonderada .imagen img{
+    position: absolute;
+    top: 220px;
+    left: 25px;
+    box-shadow: 0 10px 10px #ffd148;
+    border-radius: 10px;
+ }
+
+.calculadoraPonderada .instrucciones h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: #5B5280;
+    position: absolute;
+    left: 25px;
+    top: 285px;
+ }
+
+.calculadoraPonderada .instrucciones p{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 25px;
+    top: 330px;
+ }.calculadoraPonderada
+ .calculadoraPonderada.instrucciones  i{
+    color: #5B5280;
+ }
+
+.resaltado{
+    color: #5B5280;
+}
+
+.parrafoR{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 750px;
+    left: 170px;
+}
+
+.parrafoR2{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 900px;
+    left: 170px;
+}
+
+.calculadoraPonderada{
+    position: relative;
+    top:30%;
+    background-color: #FFEECE55;
+    backdrop-filter: blur(20px);
+    width: calc(92%);
+    height: 900px;
+    left:4%;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-rows: 300px;
+    padding:50px 0;
+    box-shadow: 0 20px 20px #0000004A;
+}
+
+/* container ponderada fin */
 
 .containerCalc textarea{
     position: relative;
