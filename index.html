@@ -81,12 +81,17 @@
                         <b>2.</b> Dividir la suma anterior entre el número total de datos. <br>
                         <b>3</b>  El resultado obtenido es la media aritmética de la muestra estadística. <br> <br>
                         Introduzca los datos de cualquier muestra estadística en la siguiente calculadora para <br> 
-                        calcular su media aritmética. Los datos deben separase por un espacio e introducirse  <br>
+                        calcular su media aritmética. Los datos deben separase por una coma e introducirse  <br>
                         usando el punto como separador decimal. </p>
                  </div>
                  <div class="containerCalc">
-                    <textarea type="text" id="aritmetica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
-                    <button id="btnAritmetica">Calcular</button>
+                    
+                    <textarea type="text" placeholder="1.2,3,4.3,5 " id="inputAritmetica" cols="2" rows="2"></textarea>
+                    <button type="button" value = "clear" onclick="calcularAritmetica();" id="btnArit">Calcular</button>
+                    <p id="parrafoArit" class="parrafoR"></p>
+                   
+
+                 
             </div>
 
             </div> <br><br><br><br><br><br>
@@ -97,12 +102,12 @@
         <section id="mediaPond">
             <!-- Media ponderada -->
 
-            <div class="calculadoraAri">
+            <div class="calculadoraPonderada">
                 <div class="titulo">
                     <h2>Calculadora Media ponderada</h2>
                 </div>
                 <div class="texto">
-                    <p>La media ponderada es una medida de tendencia central en la cual, a cada valor. <br> 
+                    <p id="texto">La media ponderada es una medida de tendencia central en la cual, a cada valor. <br> 
                     x¡ que puede tomar una variable X, se le asigna un <i>peso</i> p¡. <br>
                     es la división entre el sumatorio de todos los valores X multiplicados <br>
                     por su peso entre la suma de todos los peso. <br><br>
@@ -116,19 +121,25 @@
 
                     <div class="instrucciones">
                         <h3>Cómo calcular la media ponderada</h3>
-                     <p><b>1.</b> Multiplicar los datos por sus pesos correspondientes.<br>
-                        <b>2.</b> Sumar los resultados de la multiplicacion.<br>
-                        <b>3</b> dividir el resultado de la suma por la suma de los pesos.<br>
-                        <b>4</b> El resultado obtenido es la media ponderada de la muestra estadistica.<br><br>
+                     <p><b class="resaltado">1.</b> Multiplicar los datos por sus pesos correspondientes.<br>
+                        <b class="resaltado">2.</b> Sumar los resultados de la multiplicacion.<br>
+                        <b class="resaltado">3</b> dividir el resultado de la suma por la suma de los pesos.<br>
+                        <b class="resaltado">4</b> El resultado obtenido es la media ponderada de la muestra estadistica.<br><br>
 
                         Introduzca los datos de cualquier muestra estadística en la siguiente calculadora para <br> 
                         calcular su media ponderada. Ingrese en el primer contenedor los datos y en el segundo el <br> 
-                        peso de los datos. Los datos deben separase por un espacio e introducirse usando el punto <br> 
+                        peso de los datos. Los datos deben separase por una coma e introducirse usando el punto <br> 
                         como separador decimal.</p> 
                  </div>
                  <div class="containerCalc">
-                    <textarea type="text" id="aritmetica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
-                    <button id="btnPonderada">Calcular</button>
+                    <textarea type="text" id="moderada" placeholder="1.2, 2, 3,4, 4 
+Datos estadísticos" cols="2" rows="2"></textarea> <br>
+                    <textarea type="text" id="moderada2" placeholder="1.2, 2, 3,4, 4 
+Pesos estadísticos" cols="2" rows="2"></textarea>
+
+                    <button id="btnPonderada" onclick="calcularPonderada()">Calcular</button>
+                    <p id="parrafoPond" class="parrafoR2"></p>
+                    
              </div>
             </div> <br><br><br><br><br><br>
 
@@ -161,12 +172,15 @@
                         <b>2.</b>Sumar todos los cuadrados calculados en el paso anterior. <br>
                          <b>3</b> Dividir el resultado entre el número de datos de la muestra. <br> <br>
                         Introduzca los datos de cualquier muestra estadística en la siguiente calculadora para <br> 
-                        calcular su media cuadrática. Los datos deben separase por un espacio e introducirse  <br>
+                        calcular su media cuadrática. Los datos deben separase por una coma e introducirse  <br>
                         usando el punto como separador decimal. </p>
                  </div>
                  <div class="containerCalc">
-                    <textarea type="text" id="aritmetica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
-                    <button id="btnCuadratica">Calcular</button>
+                    <textarea type="text" id="cuadratica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
+                    <button id="btnCuadratica" onclick="calcularCuadratica()">Calcular</button>
+                    <p class="parrafoR" id="parrafoCuad" ></p>
+
+
              </div>
             </div> <br><br><br><br><br><br>
 
@@ -183,10 +197,11 @@
                     <h2>Calculadora Media armonica</h2>
                 </div>
                 <div class="texto">
-                    <p>La media aritmética es un promedio estándar que a menudo se denomina <i>promedio</i>. <br> 
-                    La media aritmética es el promedio de un conjunto de valores, o su distribución. <br>
-                   Se obtiene con la suma de un conjunto de valores dividida entre el número total de sumandos <br> <br>
-                   La fórmula de la media armonica es la siguiente:
+                    <p>La media armónica es una medida de posición central de la estadística descriptiva. <br> 
+                        La media armónica se calcula dividiendo el número total de datos estadísticos entre <br> 
+                        la suma de los <i>inversos</i> de cada valor. La media armónica sirve para calcular <br> 
+                        promedios de velocidades, tiempos o hacer cálculos en electrónica.<br> <br>
+                        La fórmula de la media armonica es la siguiente:
                 </p>
                 </div>
 
@@ -196,16 +211,17 @@
 
                     <div class="instrucciones">
                         <h3>Cómo calcular la media armonica</h3>
-                     <p><b>1.</b> Sumar todos los datos estadísticos de la muestra. <br>
-                        <b>2.</b> Dividir la suma anterior entre el número total de datos. <br>
-                        <b>3</b>  El resultado obtenido es la media aritmética de la muestra estadística. <br> <br>
+                     <p><b>1.</b> Calcular el inverso de cada dato estadístico de la muestra. <br>
+                        <b>2.</b> Sumar todos los inversos calculados. <br>
+                        <b>3</b>  Dividir el número total de datos entre la suma hallada en el paso anterior. <br> <br>
                         Introduzca los datos de cualquier muestra estadística en la siguiente calculadora para <br> 
-                        calcular su media aritmética. Los datos deben separase por un espacio e introducirse  <br>
+                        calcular su media armonica. Los datos deben separase por una coma e introducirse  <br>
                         usando el punto como separador decimal. </p>
                  </div>
                  <div class="containerCalc">
-                    <textarea type="text" id="aritmetica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
-                    <button>Calcular</button>
+                    <textarea type="text" id="armonica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
+                    <button onclick="calcularArmonica()">Calcular</button>
+                    <p class="parrafoR" id="parrafoArm"></p>
              </div>
             </div> <br><br><br><br><br><br>
 
@@ -221,11 +237,12 @@
                     <h2>Calculadora Media geometrica</h2>
                 </div>
                 <div class="texto">
-                    <p>La media aritmética es un promedio estándar que a menudo se denomina <i>promedio</i>. <br> 
-                    La media aritmética es el promedio de un conjunto de valores, o su distribución. <br>
-                   Se obtiene con la suma de un conjunto de valores dividida entre el número total de sumandos <br> <br>
-                   La fórmula de la media geometrica es la siguiente:
-                </p>
+                    <p>La media geométrica es una medida de posición central de la estadística <br> 
+                        descriptiva. La media geométrica de un conjunto de datos estadísticos es <br> 
+                        igual a la <i>raíz n-ésima</i> del producto de todos los valores. La media <br> 
+                        geométrica se utiliza en las finanzas de las empresas para calcular tasas de <br> 
+                        retorno, promedios sobre porcentajes, e intereses compuestos. <br> 
+                    </p>
                 </div>
 
                  <div class="imagen">
@@ -234,69 +251,23 @@
 
                     <div class="instrucciones">
                         <h3>Cómo calcular la media geometrica</h3>
-                     <p><b>1.</b> Sumar todos los datos estadísticos de la muestra. <br>
-                        <b>2.</b> Dividir la suma anterior entre el número total de datos. <br>
-                        <b>3</b>  El resultado obtenido es la media aritmética de la muestra estadística. <br> <br>
+                     <p><b>1.</b> Calcular el producto de todos los datos estadísticos de la muestra <br>
+                        <b>2.</b> Hallar la raíz n-ésima del producto calculado. <br> <br>
                         Introduzca los datos de cualquier muestra estadística en la siguiente calculadora para <br> 
-                        calcular su media geometrica. Los datos deben separase por un espacio e introducirse  <br>
+                        calcular su media geometrica. Los datos deben separase por una coma e introducirse  <br>
                         usando el punto como separador decimal. </p>
                  </div>
                  <div class="containerCalc">
-                    <textarea type="text" id="aritmetica" placeholder="1.2, 2, 3,4, 4" cols="2" rows="2"></textarea>
-                    <button>Calcular</button>
+                    <textarea type="text" id="geometrica" placeholder="1.2, 2, 3.4, 4" cols="2" rows="2"></textarea>
+                    <button onclick="calcularGeometrica();">Calcular</button>
+                    <p class="parrafoR" id="parrafoGeo"></p>
              </div>
             </div> <br><br><br><br><br><br>
 
             <!-- Final media  geometrica-->
         </section>
 
-            <!-- list item 
-            <div class="list">
-                <h2>NEW PRODUCT</h2>
-                <div class="item">
-                    <img src="green.png">
-                    <div class="content">
-                       <div class="title">Product Name</div>
-                        <div class="price">$203.06</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="black.png">
-                    <div class="content">
-                       <div class="title">Product Name</div>
-                        <div class="price">$203.06</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="green.png">
-                    <div class="content">
-                       <div class="title">Product Name</div>
-                        <div class="price">$203.06</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="black.png">
-                    <div class="content">
-                       <div class="title">Product Name</div>
-                        <div class="price">$203.06</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="green.png">
-                    <div class="content">
-                       <div class="title">Product Name</div>
-                        <div class="price">$203.06</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="black.png">
-                    <div class="content">
-                       <div class="title">Product Name</div>
-                        <div class="price">$203.06</div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
+            
         <footer>
            <div class="title">
                 <i class="fa-solid fa-square-root-variable"></i>
@@ -308,16 +279,16 @@
                 <li><i class="fa-solid fa-envelope"></i> CONTACTO</li>
            </ul>
         </footer>
-        <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener("click", function(e){
-                e.preventDefault();
-                document.querySelector(this.getAttribute("href")).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        </script>
     <script src="./mediasfunciones.js"></script>
     <script src="./main.js"></script>
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e){
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
 </body>
 </html>
