@@ -4,6 +4,13 @@ body{
     margin: 0;
    line-height: 23px;
 }
+
+.mobile{
+    display: none;
+}
+
+
+
 .container-fuild{
     width:1000px;
     border-radius: 30px;
@@ -464,6 +471,42 @@ footer .menuBottom li{
     cursor: pointer;
 }
 
+
+/*Swal alert*/
+.swal-text {
+    background-color: #FEFAE3;
+    padding: 17px;
+    border: 1px solid #F0E1A1;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+    /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+
+  }
+
+  .swal-title {
+    margin: 0px;
+    font-size: 20px;
+    color: #5B5280;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 28px;
+  }
+
+  .swal-modal {
+    border-radius: 25px;
+  }
+
+  .swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #5B5280;
+    font-size: 12px;
+    border: 1px solid #87819e;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  }
+
+
 @media (max-width: 900px) {
 
     .container{
@@ -509,16 +552,77 @@ footer .menuBottom li{
 
 
 
-@media (max-width: 640px) {
+@media (max-width: 938px) {
     
-    .menu {
-      display: none;
+   header{
+    display: none;
+   }
+
+   section{
+    display: none;
+   }
+
+   .container .banner {
+    display: none;
+   }
+
+   footer .title{
+    display: none;
+   }
+
+   footer .menuBottom{
+    display: none;
+   }
+
+  
+
+    .mobile{
+        position: absolute;
+        top: 10%;
+        display: contents;
+        background-color: #FFEBC2;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+        left: 5%;
+       line-height: 27px;
+       display: grid;
+       justify-content: center;
     }
-   
+   .mobile img{ 
+        padding-top: 20%;
+        width: max-content;
+        padding-left: 20%;
+   }
+
+   .mobile .titulo {
+    font-weight: bold;
+    color: #4c446d;
+    padding: 10px;
+
+   }
+
+.mobile .logo2{
+    font-weight: bold;
+    font-size: xx-large;
+    justify-content: left!important;
+}   
+
+.mobile .logo2 i{
+    color: #FCB116;
+}
+
+.mobile .subtitulo{
+    padding-top: 15%;
+    color: #4c446d;
+}
+
+.mobile b{
+    color: #4c446d;
+}
+
+.mobile i{
+    color: #4c446d;
+}
   }
   
-  @media (min-width: 641px) {
-    .mobile-menu {
-      display: none;
-    }
-  }
+  
