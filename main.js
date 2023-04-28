@@ -1,5 +1,4 @@
 
-
 //input usuario
 
 function calcularAritmetica() {
@@ -13,7 +12,7 @@ function calcularAritmetica() {
     let numeros = [];
 
     separado.forEach(element => {
-        numeros.push(Number(element));
+        numeros.push(Number(element).toFixed(2));
     });
     
     //sumar datos
@@ -21,10 +20,12 @@ function calcularAritmetica() {
     //division datos
     const divisionDatos = MediasEstadistica.dividirSumDatosEntreNumDatos(sumaDatos, numeros);
     //resultado a string
-    let spanArit = document.createElement('span');
-    document.getElementById('parrafoArit').appendChild(spanArit);
     const resultadoAritS = divisionDatos.toString();
-    spanArit.innerHTML = ('= '+ resultadoAritS); 
+   
+    swal({
+        title: 'Resultado Media Aritmetica',
+        text: resultadoAritS
+    }); 
     
 }   
 
@@ -40,7 +41,7 @@ function calcularPonderada(){
     console.log(numeros1);
 
     separado.forEach(element => {
-        numeros1.push(Number(element));
+        numeros1.push(Number(element).toFixed(2));
     });
 
     let inputVal2 = document.getElementById("moderada2").value;
@@ -67,10 +68,13 @@ function calcularPonderada(){
     const pesosEntreDatos = MediasEstadistica.valor1SobreValor2(sumaDatosPorPesos, sumarPesos);
     console.log(pesosEntreDatos);
     //Resultado a string
-    let spanPond = document.createElement('span');
-    document.getElementById('parrafoPond').appendChild(spanPond);
     const resultadoPondS = pesosEntreDatos.toString();
-    spanPond.innerHTML = ('= '+ resultadoPondS); 
+   
+    swal({
+        title: 'Resultado Media Ponderada',
+        text: resultadoPondS
+    }); 
+    
     
 }
 
@@ -83,7 +87,7 @@ function calcularCuadratica(){
     let numeros = [];
 
     separado.forEach(element => {
-        numeros.push(Number(element));
+        numeros.push(Number(element).toFixed(2));
     });
 
     //Elevar datos al cuadrado
@@ -96,10 +100,13 @@ function calcularCuadratica(){
     const raiz = MediasEstadistica.raizCuadradaDato(dividirDatosCuad);
 
     //Resultado a string
-    let spanCuad = document.createElement('span');
-    document.getElementById('parrafoCuad').appendChild(spanCuad);
     const resultadoCuadS = raiz.toString();
-    spanCuad.innerHTML = ('= '+ resultadoCuadS); 
+
+    swal({
+        title: 'Resultado Media Cuadratica',
+        text: resultadoCuadS
+    }); 
+   
 
     
 }
@@ -113,7 +120,7 @@ function calcularArmonica (){
     let numeros = [];
 
     separado.forEach(element => {
-        numeros.push(Number(element));
+        numeros.push(Number(element).toFixed(2));
     });
 
     //Se crean fracciones
@@ -126,10 +133,12 @@ function calcularArmonica (){
     const divisionDatosArm = Number(MediasEstadistica.dividirNumDatosEntreSumDatos(numeros, sumaFracciones).toFixed(2));
     console.log(divisionDatosArm);
     //Resultado a string
-    let spanArm = document.createElement('span');
-    document.getElementById('parrafoArm').appendChild(spanArm);
     const resultadoArmS = divisionDatosArm.toString();
-    spanArm.innerHTML = ('= '+ resultadoArmS); 
+    swal({
+        title: 'Resultado Media Armonica',
+        text: resultadoArmS
+    }); 
+   
 
 }
 
@@ -141,7 +150,7 @@ function calcularGeometrica(){
     let numeros = [];
 
     separado.forEach(element => {
-        numeros.push(Number(element));
+        numeros.push(Number(element).toFixed(2));
     });
 
     //multiplicar datos
@@ -152,10 +161,13 @@ function calcularGeometrica(){
     console.log(hallarRaiz);
 
      //resultado a string
-     let spanGeo = document.createElement('span');
-     document.getElementById('parrafoGeo').appendChild(spanGeo);
      const resultadoGeoS = hallarRaiz.toString();
-     spanGeo.innerHTML = ('= '+ resultadoGeoS); 
+
+     swal({
+        title: 'Resultado Media Geometrica',
+        text: resultadoGeoS
+    }); 
+     
 }
 
 
