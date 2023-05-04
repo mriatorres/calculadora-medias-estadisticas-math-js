@@ -12,7 +12,7 @@ function calcularAritmetica() {
     let numeros = [];
 
     separado.forEach(element => {
-        numeros.push(Number(element).toFixed(2));
+        numeros.push(Number(element));
     });
     
     //sumar datos
