@@ -20,7 +20,7 @@ function calcularAritmetica() {
     //division datos
     const divisionDatos = MediasEstadistica.dividirSumDatosEntreNumDatos(sumaDatos, numeros);
     //resultado a string
-    const resultadoAritS = divisionDatos.toString();
+    const resultadoAritS = divisionDatos;
    
     swal({
         title: 'Resultado Media Aritmetica',
