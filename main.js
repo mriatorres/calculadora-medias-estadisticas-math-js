@@ -1,6 +1,5 @@
 
 //input usuario
-
 function calcularAritmetica() {
    
 
